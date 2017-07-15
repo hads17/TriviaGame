@@ -21,23 +21,48 @@
     <div class="container">
         <div id="gameArea">
             <h1>Lord Of The Rings Trivia!</h1>
+           
             <div id="startScreen">
                 <button id="startBtn">Click Here To Begin</button>
             </div>
+           
             <div id="questionScreen">
-                <div>You have <span id="timeRemain">10</span> Seconds Remaining!</div>
-                
-                <div id="question"></div>
+                <div class="timeRemain">You have <span id="timeRemain">10</span> Seconds Remaining!</div>
 
+                <div id="question"></div>
+                
                 <div id="questionList">
                     
                 </div>
             </div>
-            <div id="answerScreen">
-
-            </div>
+            <div class="containerScreen">
+                <div id="correctScreen">
+                    <h1>Correct!</h1>
+                    <div><img id="correctGif"></div>
+                    <button id="nextBtn">Next Question</button>
+                </div>
+    
+                <div id="incorrectScreen">
+                    <h1>Incorrect!</h1>
+                    <div><img id="incorrectGif"></div>
+                    <button id="nextBtn">Next Question</button>
+                </div>
+                
+                <div id="unansweredScreen">
+                    <h1>Time's up!</h1>
+                    <div><img id="unansweredGif"></div>
+                    <button id="nextBtn">Next Question</button>
+                </div>
+ 
             <div id="endScreen">
+                <div id="scoreDisplay">
+                    <h1>Score</h1>
+                    <h2>Correct: <span class="block" id="scoreCorrect">0</span></h2>
+                    <h2>Incorrect: <span class="block" id="scoreIncorrect">0</span></h2>
+                    <h2>unanswered: <span class="block" id="scoreUnanswered">0</span></h2>
+                </div>
 
+                <button id="restartBtn">Start Over</button>
             </div>
         </div>
     </div>
