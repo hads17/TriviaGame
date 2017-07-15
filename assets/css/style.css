@@ -1,0 +1,48 @@
+body {
+    font-family: 'Berkshire Swash', cursive;
+     background-image: url(../images/background.jpg) 
+}
+
+h1 {
+    font-family: 'Tangerine', cursive;
+}
+
+.container {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
+
+#gameArea {
+    color: #C6480E;
+    font-size: 70px;
+    background-image: url(../images/gameAreaBackground.jpg);
+    background-repeat: no-repeat;
+    height: 1000px;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+#startScreen {
+
+}
+
+#startBtn {
+    background-color: #C6480E;
+    border: 2px #C27527 solid;
+    height: 50px;
+    width: 300px;
+}
+
+#startBtn:hover {
+    background-color: #570706;
+    border: 2px #C27527 solid;
+    height: 50px;
+    width: 300px;
+}
+
+#questionScreen {
+    font-size: 35px;
+    color: #f9b330;
+}

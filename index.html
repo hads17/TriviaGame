@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trivia Game</title>
+
+    <!-- linking reset css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+    <!-- linking css style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- Linking fonts from google -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Tangerine:700">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="gameArea">
+            <h1>Lord Of The Rings Trivia!</h1>
+            <div id="startScreen">
+                <button id="startBtn">Click Here To Begin</button>
+            </div>
+            <div id="questionScreen">
+                <div>You have <span id="timeRemain">10</span> Seconds Remaining!</div>
+                
+                <div id="question"></div>
+
+                <div id="questionList">
+                    <div class="question"></div>
+                    <div class="question"></div>
+                    <div class="question"></div>
+                    <div class="question"></div>
+                </div>
+            </div>
+            <div id="answerScreen">
+
+            </div>
+            <div id="endScreen">
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>
