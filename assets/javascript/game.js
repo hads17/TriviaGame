@@ -1,5 +1,4 @@
-var questions = [
-    {
+var questions = [{
         question1: {
             question: 'How many rings of power were given to man?',
             correctAnswer: '9',
@@ -16,7 +15,7 @@ var questions = [
             gif: "../images/question2Gif.gif",
         }
     },
-    
+
     {
         question3: {
             question: 'Who participated in the battle of isengard?',
@@ -25,7 +24,7 @@ var questions = [
             gif: "../images/question1Gif.gif",
         }
     },
-    
+
     {
         question4: {
             question: 'How does farmer Maggot keep people off his farm, Bamfurlong?',
@@ -34,7 +33,7 @@ var questions = [
             gif: "../images/question1Gif.gif",
         }
     },
-    
+
     {
         question5: {
             question: 'How is the witch king killed?',
@@ -43,13 +42,53 @@ var questions = [
             gif: "../images/question1Gif.gif",
         }
     },
-    
+
 ]
 
-$(document).ready(function(){
-    $('#startBtn').click(function(){
+var scoreCount = {
+    correct: null,
+    incorrect: null,
+    unanswered: null,
+}
+
+var timeLimits = {
+    questionTime: 10,
+    switchScreenTime: 3, 
+}
+
+var currentQuestionList;
+
+var int = function(){
+    scoreCount.correct = 0;
+    scoreCount.incorrect = 0;
+    scoreCount.unanswered = 0;
+    currentQuestionList = questions[0].answers;
+    $('#questionScreen').hide()
+    $('#endScreen').hide()
+}
+
+
+
+var intQuestions = function(){
+    for (i = 0; i < currentQuestionList.length - 1; i++){
+        var questionBtn = $('<button>');
+        questionBtn.addClass('questionBtn')
+        questionBtn.attr('data-answer', currentQuestionList)
+    }
+}
+
+var generateAnswerList = function(){
+
+}
+
+
+$(document).ready(function () {
+    int();
+   
+    $('#startBtn').click(function () {
         $('#startScreen').hide();
-        console.log('hello')
+        $('#questionScreen').show();
+        intQuestions();
     });
 
 });
