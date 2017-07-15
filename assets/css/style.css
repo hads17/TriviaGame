@@ -42,3 +42,10 @@ h1 {
     font-size: 35px;
     color: #f9b330;
 }
+
+.answerBtn {
+    background-color: #C6480E;
+    border: 2px #C27527 solid;
+    height: 50px;
+    width: 300px;
+}
