@@ -14,7 +14,6 @@ h1 {
 }
 .containerScreen {
     margin: auto;
-    height: 100%;
     width: 100%;
 }
 
@@ -28,9 +27,8 @@ h1 {
 #gameArea {
     color: #C6480E;
     font-size: 70px;
-    background-image: url(../images/gameAreaBackground.jpg);
-    background-repeat: no-repeat;
-    height: 1000px;
+    background: black;
+    height: 974px;
     width: 50%;
     text-align: center;
     margin: auto;
@@ -170,4 +168,15 @@ h1 {
 
 #endScreen {
     margin: auto;
+}
+
+.gold-text {
+    color: #f9b330;
+    background-color: #C6480E;
+    border: 2px #C27527 solid;
+    border-radius: 10px;
+    margin: 150px auto 0px auto;
+    width: 400px;
+    font-family: 'Berkshire Swash', cursive;
+    font-size: .7em;
 }

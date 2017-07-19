@@ -18,14 +18,19 @@
 </head>
 
 <body>
+<!-- A container that wraps around the body -->
     <div class="container">
+        
+    <!-- Contains all the content of the game -->
         <div id="gameArea">
             <h1>Lord Of The Rings Trivia!</h1>
            
+        <!-- The Beginning Screen -->
             <div id="startScreen">
                 <button id="startBtn">Click Here To Begin</button>
             </div>
            
+        <!-- Contains all questions and answer lists -->
             <div id="questionScreen">
                 <div class="timeRemain">You have <span id="timeRemain">10</span> Seconds Remaining!</div>
 
@@ -35,26 +40,30 @@
                     
                 </div>
             </div>
+
+        <!-- Contains the screens that show if you were correct/incorrect/unanswered -->
             <div class="containerScreen">
                 <div id="correctScreen">
                     <h1>Correct!</h1>
-                    <div><img id="correctGif"></div>
+                    <div id="correctGif"></div>
                     <button id="nextBtn">Next Question</button>
                 </div>
     
                 <div id="incorrectScreen">
                     <h1>Incorrect!</h1>
-                    <div><img id="incorrectGif"></div>
+                    <div><img src="assets/images/incorrectGif.gif" alt="incorrectGif"></div>
+                    <div class="gold-text"><h2>The Correct Answer is: <h2></h2><h2 id="correctedAnswer"></h2></div>
                     <button id="nextBtn">Next Question</button>
                 </div>
                 
                 <div id="unansweredScreen">
                     <h1>Time's up!</h1>
-                    <div><img id="unansweredGif"></div>
+                    <div><img src="assets/images/unansweredGif.gif" alt="unansweredGif"></div>
                     <button id="nextBtn">Next Question</button>
                 </div>
  
-            <div id="endScreen">
+            <!-- Displays your end score and has a restart button -->
+                <div id="endScreen">
                 <div id="scoreDisplay">
                     <h1>Score</h1>
                     <h2>Correct: <span class="block" id="scoreCorrect">0</span></h2>
